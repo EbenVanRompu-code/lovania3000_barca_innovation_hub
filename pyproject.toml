@@ -1,0 +1,28 @@
+[project]
+name = "more-than-a-hack-2027"
+version = "0.1.0"
+description = "More than a Hack 2027, Phase 1: ball possession"
+requires-python = ">=3.11"
+# requirements.txt: everything the scorer and starter/baseline.py need
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn>=1.9.1",
+]
+
+[dependency-groups]
+# requirements-starter.txt: loaders and notebooks in starter/
+# kloppy is pinned because the Metrica EPTS export is known to load under 3.18.0
+starter = [
+    "kloppy==3.18.0",
+    "matplotlib",
+    "notebook",
+]
+# tests for possession/ (PLAN.md section 8)
+dev = [
+    "pytest",
+]
+
+[tool.uv]
+default-groups = ["starter", "dev"]
+package = false

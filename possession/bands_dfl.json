@@ -1,0 +1,21 @@
+{
+  "source": "variant C leave-one-match-out output on 7 degraded DFL matches x 4 gap profiles (held-out), min-max +/- 25%; defaults of Params at tuning time",
+  "bands": {
+    "spells_per_10min": [
+      18.62100674340985,
+      41.06003772225402
+    ],
+    "mean_spell_s": [
+      6.213774193548387,
+      17.204938271604938
+    ],
+    "home_share": [
+      0.3108913323914245,
+      0.8635451778437391
+    ],
+    "d_share": [
+      0.3027292844848783,
+      0.6844134330783196
+    ]
+  }
+}
